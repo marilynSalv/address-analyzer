@@ -27,7 +27,8 @@
               "src/favicon.ico",
               "src/assets",
               "src/manifest.json",
-              "src/address-locator.ts"
+              "src/address-locator.ts",
+              "src/background.js"
             ],
             "styles": [
               "src/styles.css"

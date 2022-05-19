@@ -7,4 +7,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'address-analyzer';
+
+  constructor () {}
+
+  // getAddress() {
+  //   chrome.tabs.getCurrent(function(tab){
+  //     var address = tab?.title;
+  //     console.log(tab);
+  //     console.log("going to print address");
+  //     console.log(address);
+  //   });
+  //}
 }

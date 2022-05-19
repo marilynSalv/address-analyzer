@@ -4,19 +4,26 @@
     "description": "Finds information about a address in florida inside homeownership app",
     "manifest_version": 2,
     "permissions": [
+        "tabs",
+        "declarativeContent",
         "activeTab",
         "webNavigation",
         "declarativeContent",
         "file://*/*"
     ],
-    "browser_action": {
-        "default_popup": "index.html"
-    },
+
     "content_scripts": [{
         "matches": [
             "https://www.realtor.com/realestateandhomes-detail/*"
              , "https://www.zillow.com/homedetails/*"
         ],
         "js": ["address-locator.ts"]
-    }]
+    }],
+    "page_action": {
+        "default_title": "Address Analyzer", 
+        "default_popup": "index.html"        
+    },
+    "background": {
+        "scripts": ["background.js"]
+    }
 }
