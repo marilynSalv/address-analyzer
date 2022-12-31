@@ -126,5 +126,8 @@
       }
     }
   },
-  "defaultProject": "address-analyzer"
+  "defaultProject": "address-analyzer",
+  "cli": {
+    "analytics": false
+  }
 }
